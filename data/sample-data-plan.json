@@ -1,0 +1,56 @@
+[
+  {
+    "sobject": "Account",
+    "saveRefs": true,
+    "files": [
+      "Account.json"
+    ]
+  },
+  {
+    "sobject": "Location",
+    "saveRefs": true,
+    "files": [
+      "Location.json"
+    ]
+  },
+  {
+    "sobject": "Pricebook2",
+    "saveRefs": true,
+    "files": [
+      "Pricebook2.json"
+    ]
+  },
+  {
+    "sobject": "Product2",
+    "saveRefs": true,
+    "files": [
+      "Product2.json"
+    ]
+  },
+  
+  {
+    "sobject": "Contract",
+    "resolveRefs": true,
+    "saveRefs": true,
+    "files": [
+      "Contract.json"
+    ]
+  },
+
+  {
+    "sobject": "Order",
+    "resolveRefs": true,
+    "saveRefs": true,
+    "files": [
+      "Order.json"
+    ]
+  },
+
+  {
+    "sobject": "ProductItem",
+    "resolveRefs": true,
+    "files": [
+      "ProductItem.json"
+    ]
+  }
+]

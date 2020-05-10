@@ -1,0 +1,31 @@
+{
+    "records": [
+        {
+            "attributes": {
+                "type": "ProductItem",
+                "referenceId": "ProductItemRef1"
+            },
+            "QuantityOnHand": 2300,
+            "Product2Id": "@Product2Ref1",
+            "LocationId": "@LocationRef1"
+        },
+        {
+            "attributes": {
+                "type": "ProductItem",
+                "referenceId": "ProductItemRef2"
+            },
+            "QuantityOnHand": 4748,
+            "Product2Id": "@Product2Ref2",
+            "LocationId": "@LocationRef1"
+        },
+        {
+            "attributes": {
+                "type": "ProductItem",
+                "referenceId": "ProductItemRef3"
+            },
+            "QuantityOnHand": 3325,
+            "Product2Id": "@Product2Ref3",
+            "LocationId": "@LocationRef1"
+        }
+    ]
+}

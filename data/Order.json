@@ -1,0 +1,16 @@
+{
+    "records": [
+        {
+            "attributes": {
+                "type": "Order",
+                "referenceId": "OrderRef1"
+            },
+            "Type": "Return",
+            "Status": "Draft",
+            "EffectiveDate": "2020-05-15",
+            "ContractId": "@ContractRef1",
+            "AccountId": "@AccountRef1",
+            "Pricebook2Id": "@Pricebook2Ref2"
+        }
+    ]
+}

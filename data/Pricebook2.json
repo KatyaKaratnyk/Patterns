@@ -1,0 +1,11 @@
+{
+    "records": [
+        {
+            "attributes": {
+                "type": "Pricebook2",
+                "referenceId": "Pricebook2Ref2"
+            },
+            "Name": "Test Price Book"
+        }
+    ]
+}

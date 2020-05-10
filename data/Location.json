@@ -1,0 +1,13 @@
+{
+    "records": [
+        {
+            "attributes": {
+                "type": "Location",
+                "referenceId": "LocationRef1"
+            },
+            "Name" : "WareHouse1",
+            "LocationType": "Warehouse",
+            "IsInventoryLocation": "true"
+        }
+    ]
+}

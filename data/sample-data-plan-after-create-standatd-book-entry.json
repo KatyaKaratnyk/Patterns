@@ -1,0 +1,16 @@
+[{
+  "sobject": "PricebookEntry",
+  "resolveRefs": true,
+  "saveRefs": true,
+  "files": [
+    "PricebookEntry.json"
+  ]
+},
+
+{
+  "sobject": "OrderItem",
+  "resolveRefs": true,
+  "files": [
+    "OrderItem.json"
+  ]
+}]

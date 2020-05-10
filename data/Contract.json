@@ -1,0 +1,11 @@
+{
+    "records": [
+        {
+            "attributes": {
+                "type": "Contract",
+                "referenceId": "ContractRef1"
+            },
+            "AccountId" : "@AccountRef1"
+        }
+    ]
+}

@@ -1,0 +1,34 @@
+{
+    "records": [
+        {
+            "attributes": {
+                "type": "PricebookEntry",
+                "referenceId": "PricebookEntryRef1"
+            },
+            "IsActive": "true",
+            "UnitPrice": "3",
+            "Pricebook2Id": "@Pricebook2Ref2",
+            "Product2Id": "@Product2Ref3"
+        },
+        {
+            "attributes": {
+                "type": "PricebookEntry",
+                "referenceId": "PricebookEntryRef2"
+            },
+            "IsActive": "true",
+            "UnitPrice": "2",
+            "Pricebook2Id": "@Pricebook2Ref2",
+            "Product2Id": "@Product2Ref2"
+        },
+        {
+            "attributes": {
+                "type": "PricebookEntry",
+                "referenceId": "PricebookEntryRef3"
+            },
+            "IsActive": "true",
+            "UnitPrice":"5",
+            "Pricebook2Id": "@Pricebook2Ref2",
+            "Product2Id": "@Product2Ref1"
+        }
+    ]
+}
