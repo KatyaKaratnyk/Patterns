@@ -1,4 +1,4 @@
-public with sharing class OrderContext {
+public with sharing class OrderContext implements IOrderContext{
     OrderState state;
     Id orderId;
     Map<String, OrderState> orderTypeToState;

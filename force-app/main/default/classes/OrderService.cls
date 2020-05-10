@@ -13,10 +13,11 @@ public with sharing class OrderService {
     }
 
     public void send(Order currentOrder) {
-        OrderContext context = new OrderContext(currentOrder);
+        IOrderContext context = new OrderContextProxy(currentOrder);
         context.sendOrder();
     }
 
+    //This method save our order in some external data
     public void save(Order currentOrder) {
         OrderAdapter adapter = new OrderAdapter();
         adapter.saveOrder(currentOrder);
