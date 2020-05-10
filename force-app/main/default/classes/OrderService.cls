@@ -1,25 +1,20 @@
 public with sharing class OrderService {
-    public Order getOrderById(Id orderId) {
-        List<Order> orders = [
-            SELECT Id, Name, Type 
-            FROM Order
-            WHERE Id = :orderId
-        ];
-        if (!orders.isEmpty()) {
-            return orders.get(0);
-        }
-
-        return null;
+    IOrderContext context;
+    OrderAdapter adapter;
+    Order currentOrder;
+    public OrderService(Order currentOrder) {
+        //Here we use proxy, whereas initialize of OrderContext is too hard, so we initialize this class when we really need it
+        this.currentOrder = currentOrder;
+        this.context = new OrderContextProxy(this.currentOrder);
+        this.adapter = new OrderAdapter();
     }
 
-    public void send(Order currentOrder) {
-        IOrderContext context = new OrderContextProxy(currentOrder);
+    public void send() {
         context.sendOrder();
     }
 
-    //This method save our order in some external data
-    public void save(Order currentOrder) {
-        OrderAdapter adapter = new OrderAdapter();
-        adapter.saveOrder(currentOrder);
+    //This method save our order in some external data base
+    public void save() {
+        adapter.saveOrder(this.currentOrder);
     }
 }
