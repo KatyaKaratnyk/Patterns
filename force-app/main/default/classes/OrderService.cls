@@ -16,4 +16,9 @@ public with sharing class OrderService {
         OrderContext context = new OrderContext(currentOrder);
         context.sendOrder();
     }
+
+    public void save(Order currentOrder) {
+        OrderAdapter adapter = new OrderAdapter();
+        adapter.saveOrder(currentOrder);
+    }
 }
