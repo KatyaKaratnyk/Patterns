@@ -22,4 +22,8 @@ public with sharing class OrderContext implements IOrderContext{
     public void printOrder() {
         this.state.print(this.orderId);
     }
+
+    public void setState(String orderType) {
+        this.state = orderTypeToState.get(orderType);
+    }
 }
